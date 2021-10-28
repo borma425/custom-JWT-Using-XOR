@@ -10,7 +10,7 @@ But it is easy to print the key and get it
 Use :
 ![image](https://user-images.githubusercontent.com/42983220/139194518-13fa5c6d-124c-435d-a440-947e6555306f.png)
 
-```
+```javascript
 <script >
 
 let jsonData = `
