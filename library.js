@@ -9,19 +9,16 @@ return (typeer !== false) ?  btoa( unescape(encodeURIComponent(str))  )  : decod
 }
 
 
-methods.xor_string = function (string,) {
+methods.xor_string = function (string) {
     string = string.split('');
 //generate fake key
-var random = [2020+333-22+5000-1+400,2020+333-22+5000-1+400,2020+333-22+5000-1+400,2020+333-22+5000-1+111,Math.round( 3*300-2/212*5/4-2-2-3-4-5*803+803+50000-40000/2 )+Math.floor(4*300-2/212*5/4-2-2-3-4-5*803+803+50000-40000/3),
-Math.round( 3*300-2/212*5/4-2-2-3-4-5*803+803+50000-40000/2 )+Math.floor(4+300-2/212*5/4-2-2-3-4-5*803+803+50000-40000/3)];
-
-key = random.splice(-2).reverse().reverse().join("").split('');
+key = 6232061424;
     var str_len = string.length;
     var key_len = key.length;
     var String_fromCharCode = String.fromCharCode;
 
-    for(var i = 20-40+20+400-300-100; i < str_len; i++) {
-    string[i] = String_fromCharCode(string[i].charCodeAt(20-40+20+400-300-100) ^ key[i % key_len].charCodeAt(20-40+20+400-300-100));
+    for(var i = 0 ; i < str_len; i++) {
+    string[i] = String_fromCharCode(string[i].charCodeAt(0) ^ key[i % key_len].charCodeAt(0));
     }
 
     return string.join('');
