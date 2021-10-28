@@ -1,4 +1,11 @@
+for fun a simple version of the header encoder
+first v1
+
+
 Encrypt json data using Xor in javascript and decrypt in php
+
+The javascript code was written a little incomprehensible and a little complicated so that an intruder could not access the key
+But it is easy to print the key and get it
 
 Use :
 ![image](https://user-images.githubusercontent.com/42983220/139194518-13fa5c6d-124c-435d-a440-947e6555306f.png)
